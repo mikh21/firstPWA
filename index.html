@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#262626">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Food</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="icon.png">
+</head>
+
+<body>
+    <header>
+        <div class="logo">FOOD</div>
+        <nav id="nav">
+            <ul>
+                <li><a class="nav active" href="/index.html">Home</a></li>
+                <li><a class="nav" href="/page/about.html">About</a></li>
+                <li><a class="nav" href="/page/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toogle" id="toogle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+    <section id="about">
+        <h2 class="judul">DAFTAR MENU</h2>
+        <hr>
+        <div class="food"></div>
+    </section>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-firestore.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyD33N4SKFx9_-cQ4mcGtXbj1DY7TT7sVOw",
+            authDomain: "belajar-55402.firebaseapp.com",
+            databaseURL: "https://belajar-55402.firebaseio.com",
+            projectId: "belajar-55402",
+            storageBucket: "belajar-55402.appspot.com",
+            messagingSenderId: "935614852142",
+            appId: "1:935614852142:web:24857f3d13af4f84be83bf",
+            measurementId: "G-5G5NGPKC4Q"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+    </script>
+
+    <script src="/assets/app.js"></script>
+    <script src="/assets/db.js"></script>
+    <script src="/assets/jquery-3.4.1.slim.min.js"></script>
+    <script src="/assets/script.js"></script>
+</body>
+
+</html>

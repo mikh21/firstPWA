@@ -1,0 +1,14 @@
+{
+    "name": "Food",
+    "short_name": "Food",
+    "description": "Aplikasi Food dari saya sendiri",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#262626",
+    "theme_color": "#262626",
+    "icons": [{
+        "src": "icon.png",
+        "sizes": "512x512",
+        "type": "image/png"
+    }]
+}
